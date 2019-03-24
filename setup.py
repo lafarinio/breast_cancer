@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='breast_cancer',
       version='0.1',
@@ -7,8 +7,16 @@ setup(name='breast_cancer',
       author='Rafał Kocoń, Robert Krzaczyński',
       author_email='226467@student.pwr.edu.pl, XXXXXX@student.pwr.edu.pl',
       license='MIT',
-      packages=['breast_cancer'],
+      packages=find_packages(),
       install_requires=[
           'scipy',
+          'pandas',
+          'anaconda'
       ],
-      zip_safe=False)
+      zip_safe=False,
+      include_package_data=True,
+      entry_points={
+          'console_scripts': [
+              'breast-cancer = src.__main__:main'
+          ]
+      },)
