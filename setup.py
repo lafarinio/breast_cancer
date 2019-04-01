@@ -16,6 +16,7 @@ setup(name='breast_cancer',
       ],
       zip_safe=False,
       include_package_data=True,
+      python_requires=">=3.6",
       entry_points={
           'console_scripts': [
               'breast-cancer = src.__main__:main'
