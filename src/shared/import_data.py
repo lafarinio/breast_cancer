@@ -5,8 +5,8 @@ import numpy
 class ImportData:
     def __init__(self,
                  # data_path='../data/breast-cancer-wisconsin.data',
-                 data_path='../data/breast-cancer-wisconsin.data',
-                 columns_path='../data/breast-cancer-columns.names'):
+                 data_path='../../data/breast-cancer-wisconsin.data',
+                 columns_path='../../data/breast-cancer-columns.names'):
         self.data_path = data_path
         self.columns_path = columns_path
 
@@ -18,7 +18,7 @@ class ImportData:
                              index_col=0,
                              names=columns_names)
 
-        return mydata.values.tolist()
+        return mydata.values
 
     def import_data(self, selected_column_names: numpy.ndarray) -> numpy.ndarray:
 
@@ -29,7 +29,7 @@ class ImportData:
                              names=columns_names,
                              usecols=selected_column_names)
 
-        return mydata.values.tolist()
+        return mydata.values
 
     def import_columns_names(self) -> numpy.ndarray:
         columns_names = pd.read_csv(self.columns_path, sep=',', comment='#', header=None)
