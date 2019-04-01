@@ -1,0 +1,27 @@
+2. Clump Thickness: 
+     statistic=0.5558082226530648, pvalue=1.14083598676301e-43
+
+3. Uniformity of Cell Size:
+    statistic=0.9104803493449781, pvalue=1.815717116667497e-116
+
+4. Uniformity of Cell Shape:
+    statistic=0.8799126637554585, pvalue=8.318375840124337e-109
+
+5. Marginal Adhesion
+    statistic=0.8995633187772926, pvalue=1.059610332695515e-113
+
+6. Single Epithelial Cell Size
+    statistic=0.9563318777292577, pvalue=1.8926592219124175e-128
+
+7. Bare Nuclei
+    ----
+
+8. Bland Chromatin
+     statistic=0.9563318777292577, pvalue=1.8926592219124175e-128
+
+9. Normal Nucleoli
+     statistic=0.9432314410480349, pvalue=5.761745887232952e-125
+
+10. Mitoses
+     statistic=0.9716157205240175, pvalue=1.4199828792311378e-132
+

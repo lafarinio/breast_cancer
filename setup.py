@@ -10,11 +10,13 @@ setup(name='breast_cancer',
       packages=find_packages(),
       install_requires=[
           'scipy',
+          'numpy',
           'pandas',
           'anaconda'
       ],
       zip_safe=False,
       include_package_data=True,
+      python_requires=">=3.6",
       entry_points={
           'console_scripts': [
               'breast-cancer = src.__main__:main'
