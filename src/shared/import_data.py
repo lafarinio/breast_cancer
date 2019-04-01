@@ -5,16 +5,24 @@ import numpy
 class ImportData:
     def __init__(self,
                  # data_path='../data/breast-cancer-wisconsin.data',
-                 data_path='data/breast-cancer-wisconsin.data',
-                 columns_path='data/breast-cancer-columns.names'):
+                 data_path='../data/breast-cancer-wisconsin.data',
+                 columns_path='../data/breast-cancer-columns.names'):
         self.data_path = data_path
         self.columns_path = columns_path
 
-    def import_data(self, selected_column_names: numpy.ndarray = None) -> numpy.ndarray:
+    def import_all_data(self) -> numpy.ndarray:
 
         columns_names = self.import_columns_names()
-        if selected_column_names is None:
-            selected_column_names = columns_names
+        mydata = pd.read_csv(self.data_path,
+                             sep=',',
+                             index_col=0,
+                             names=columns_names)
+
+        return mydata.values.tolist()
+
+    def import_data(self, selected_column_names: numpy.ndarray) -> numpy.ndarray:
+
+        columns_names = self.import_columns_names()
 
         mydata = pd.read_csv(self.data_path,
                              sep=',',

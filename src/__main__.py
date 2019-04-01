@@ -9,7 +9,8 @@ from scipy import stats, array
 
 def testKolmogorovSmirnov(selected_column_name):
     test_import = ImportData()
-    data = test_import.import_data(['Sample code number', selected_column_name, 'Class'])
+    column_names = np.array([selected_column_name, 'Class'])
+    data = test_import.import_data(column_names)
     filteredFirstClass = list(filter(lambda a: a[1] == 2, data))
     filteredSecondClass = list(filter(lambda a: a[1] == 4, data))
 
