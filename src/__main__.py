@@ -9,7 +9,7 @@ from scipy import stats, array
 
 def testKolmogorovSmirnov(selected_column_name):
     test_import = ImportData()
-    data = test_import.import_data([selected_column_name, 'Class']).values.tolist()
+    data = test_import.import_data([selected_column_name, 'Class'])
     filteredFirstClass = list(filter(lambda a: a[1] == 2, data))
     filteredSecondClass = list(filter(lambda a: a[1] == 4, data))
 

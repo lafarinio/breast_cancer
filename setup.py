@@ -10,6 +10,7 @@ setup(name='breast_cancer',
       packages=find_packages(),
       install_requires=[
           'scipy',
+          'numpy',
           'pandas',
           'anaconda'
       ],
