@@ -20,7 +20,6 @@ class NeuralNetwork:
 
     def back_propagation(self):
         diff = self.y - self.output
-        print(diff, sigmoid_derivative(self.output))
         loss_derivative_output = 2 * diff * sigmoid_derivative(self.output)
         d_weights_layer_to_output = np.dot(self.layer1.T, loss_derivative_output)
 
@@ -54,6 +53,7 @@ if __name__ == "__main__":
             'Normal Nucleoli',
             'Marginal Adhesion',
             'Clump Thickness',
+            'Marginal Adhesion',
             'Uniformity of Cell Size',
             'Uniformity of Cell Shape',
             'Mitoses',
@@ -76,13 +76,21 @@ if __name__ == "__main__":
     print(temp_X.shape, temp_X)
     nn = NeuralNetwork(temp_X, temp_y)
 
+    for j in range(20):
+        for i in range(length):
+            temp_X = np.array([X1[i]])
+            temp_y = np.array([y1[i]])
+            nn.set_new_x_y(temp_X, temp_y)
+            nn.feed_forward()
+            nn.back_propagation()
+
     for i in range(length):
         temp_X = np.array([X1[i]])
         temp_y = np.array([y1[i]])
         nn.set_new_x_y(temp_X, temp_y)
         nn.feed_forward()
         nn.back_propagation()
-        print('Iteracja \t', i, nn.output)
+        print('Iteracja \t', i, 'Prawdziwa wartosc:\t', nn.y[0, 0], 'Estymowana: \t', nn.output[0, 0])
     #
     #     print('Probki dla:\t', i, nn.output[123])
 
