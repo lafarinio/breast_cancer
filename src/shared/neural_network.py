@@ -48,18 +48,7 @@ if __name__ == "__main__":
     # nn = NeuralNetwork(X,y)
 
     test = ImportData()
-    X1: np.ndarray = test.import_data(np.array(
-        [
-            'Normal Nucleoli',
-            'Marginal Adhesion',
-            'Clump Thickness',
-            'Marginal Adhesion',
-            'Uniformity of Cell Size',
-            'Uniformity of Cell Shape',
-            'Mitoses',
-            'Class',
-        ]
-    ))
+    X1: np.ndarray = test.import_all_data()
     y1: np.ndarray = test.import_data(np.array(['Class']))
 
     # todo rafal problem z zastsosowaniem sigmoidu do obszaru wykraczajacego zbior 0-1
@@ -76,7 +65,7 @@ if __name__ == "__main__":
     print(temp_X.shape, temp_X)
     nn = NeuralNetwork(temp_X, temp_y)
 
-    for j in range(20):
+    for j in range(300):
         for i in range(length):
             temp_X = np.array([X1[i]])
             temp_y = np.array([y1[i]])

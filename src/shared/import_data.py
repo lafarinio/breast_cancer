@@ -13,10 +13,13 @@ class ImportData:
     def import_all_data(self) -> numpy.ndarray:
 
         columns_names = self.import_columns_names()
+        usecols = self.import_columns_names_without_class()
+
         mydata = pd.read_csv(self.data_path,
                              sep=',',
                              index_col=0,
-                             names=columns_names)
+                             names=columns_names,
+                             usecols=usecols)
 
         return mydata.values
 
@@ -35,3 +38,10 @@ class ImportData:
         columns_names = pd.read_csv(self.columns_path, sep=',', comment='#', header=None)
         columns_names = columns_names.to_numpy()
         return numpy.concatenate(columns_names, axis=0)
+
+    def import_columns_names_without_class(self) -> numpy.ndarray:
+        columns_names = self.import_columns_names()
+        indices = range(0,10)
+        result = numpy.take(columns_names, indices)
+
+        return result
