@@ -32,7 +32,7 @@ class NeuralNetwork:
                 self.__back_propagation()
 
     def predict_value(self, x_data: np.ndarray, y_data: np.ndarray) -> Tuple[float, float]:
-        self.set_new_x_y(x_data, temp_y)
+        self.set_new_x_y(x_data, y_data)
         self.__feed_forward()
         predicted_value = self.output[0, 0]
         true_value = self.y[0, 0]
@@ -59,19 +59,10 @@ class NeuralNetwork:
 
 
 if __name__ == "__main__":
-    # X = np.array([[0,0,1],
-    #               [0,1,1],
-    #               [1,0,1],
-    #               [1,1,1]])
-    # y = np.array([[0],[1],[1],[0]])
-    # nn = NeuralNetwork(X,y)
-
     test = ImportData()
     X1: np.ndarray = test.import_all_data()
     y1: np.ndarray = test.import_data(np.array(['Class']))
 
-    # todo rafal problem z zastsosowaniem sigmoidu do obszaru wykraczajacego zbior 0-1
-    # potrzebna pomoc
 
     y1 = mf.transform_into_discrete_values(y1)
 
