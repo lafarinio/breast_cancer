@@ -5,7 +5,7 @@ The goal of this project is to create neural network to recognize breast cancer.
 To install run:
 
 ```python
- python setup.py
+ python setup.py install
 ```
 
 # Running
