@@ -1,14 +1,12 @@
 import pandas as pd
 import numpy
+import definitions
 
 
 class ImportData:
-    def __init__(self,
-                 # data_path='../data/breast-cancer-wisconsin.data',
-                 data_path='../../data/breast-cancer-wisconsin.data',
-                 columns_path='../../data/breast-cancer-columns.names'):
-        self.data_path = data_path
-        self.columns_path = columns_path
+    def __init__(self):
+        self.data_path = definitions.BC_DATA_PATH
+        self.columns_path = definitions.BC_COLUMNS_NAMES_PATH
 
     def import_all_data(self) -> numpy.ndarray:
 
