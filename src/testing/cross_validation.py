@@ -3,11 +3,11 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 from random import shuffle
-
 from src.shared.import_data import ImportData
 from src.shared.math_functions import MathFunctions as mf
 from src.shared.neural_network import NeuralNetwork
-from src.testing.error_ratio import ErrorRatio
+from error_ratio import ErrorRatio
+from model_data import ModelData
 
 
 class CrossValidation:
@@ -17,9 +17,9 @@ class CrossValidation:
 
     def compute_performance(self):
         length = self.x.shape[0]
-        indexes_test, indexes_training = self.get_indexes(length)
-        x_test, x_training = self.split_data(self.x, indexes_test, indexes_training)
-        y_test, y_training = self.split_data(self.y, indexes_test, indexes_training)
+        indexes_test, indexes_training = ModelData.get_indexes(length)
+        x_test, x_training = ModelData.split_data(self.x, indexes_test, indexes_training)
+        y_test, y_training = ModelData.split_data(self.y, indexes_test, indexes_training)
         error_ratio = ErrorRatio()
 
         temp_X = np.array([x_training[0]])
@@ -36,24 +36,6 @@ class CrossValidation:
             print('Iteracja \t', i, 'Prawdziwa wartosc:\t', true_value, 'Estymowana: \t', predicted_value)
         print('Rozpoznano niepoprawnie ', error_ratio.get_error_ratio(), ' na ', error_ratio.get_all_number())
 
-
-    @staticmethod
-    def get_indexes(length: int) -> Tuple[any, any]:
-        indexes = list(range(0, length))
-        shuffle(indexes)
-        indexes_test, indexes_training = CrossValidation.split_list(indexes)
-        return indexes_test, indexes_training
-
-    @staticmethod
-    def split_list(x: []):
-        half = len(x) // 2
-        return x[:half], x[half:]
-
-    @staticmethod
-    def split_data(data: np.ndarray, indexes_test: [], indexes_training: []) -> Tuple[np.ndarray, np.ndarray]:
-        data_test = np.take(data, indexes_test, axis=0)
-        data_training = np.take(data, indexes_training, axis=0)
-        return data_test, data_training
 
 if __name__ == "__main__":
     test = ImportData()
