@@ -1,0 +1,27 @@
+1. 4 hidden layer inputs:
+    - recognizes correctly 444 from 683
+    - recognizes correctly 603 from 683
+    - recognizes correctly 609 from 683
+    - recognizes correctly 590 from 683
+    - recognizes correctly 612 from 683
+
+2. 3 hidden layer inputs:
+    - recognizes correctly 605 from 683
+    - recognizes correctly 585 from 683
+    - recognizes correctly 444 from 683
+    - recognizes correctly 602 from 683
+
+3. 10 hidden layer inputs:
+    - recognizes correctly 582 from 683
+    - recognizes correctly 239 from 683
+    - recognizes correctly 604 from 683
+    - recognizes correctly 242 from 683
+
+4. 20 hidden layer inputs:
+    - recognizes correctly 242 from 683
+    - recognizes correctly 241 from 683
+    - recognizes correctly 240 from 683
+    - recognizes correctly 239 from 683
+
+5. 40 hidden layer inputs:
+    - recognizes correctly 239 from 683
