@@ -1,12 +1,14 @@
 import pandas as pd
 import numpy
-import definitions
 
 
 class ImportData:
-    def __init__(self):
-        self.data_path = definitions.BC_DATA_PATH
-        self.columns_path = definitions.BC_COLUMNS_NAMES_PATH
+    def __init__(self,
+                 # data_path='../data/breast-cancer-wisconsin.data',
+                 data_path='../../data/breast-cancer-wisconsin.data',
+                 columns_path='../../data/breast-cancer-columns.names'):
+        self.data_path = data_path
+        self.columns_path = columns_path
 
     def import_all_data(self) -> numpy.ndarray:
 
@@ -18,7 +20,6 @@ class ImportData:
                              index_col=0,
                              names=columns_names,
                              usecols=usecols)
-
         return mydata.values
 
     def import_data(self, selected_column_names: numpy.ndarray) -> numpy.ndarray:
@@ -43,3 +44,16 @@ class ImportData:
         result = numpy.take(columns_names, indices)
 
         return result
+
+    def cut_columns_from_data(self, columns: []) -> numpy.ndarray:
+        columns_names = self.import_columns_names()
+        usecols = self.import_columns_names_without_class()
+        print(columns)
+        mydata = pd.read_csv(self.data_path,
+                             sep=',',
+                             index_col=0,
+                             names=columns_names,
+                             usecols=usecols)
+        tmp = mydata.drop(columns=columns)
+        print(tmp)
+        return tmp.values
