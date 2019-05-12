@@ -1,0 +1,72 @@
+1. One attribute:
+    a) Clump Thickness:
+        recognizes correctly 444 from 683
+    b) Uniformity of Cell Size:
+        recognizes correctly 444 from 683
+    c) Uniformity of Cell Shape:
+        recognizes correctly 444 from 683
+    d) Marginal Adhesion:
+        recognizes correctly 588 from 683
+    e) Single Epithelial Cell Size:
+        recognizes correctly 444 from 683
+    f) Bare Nuclei:
+        recognizes correctly 623 from 683
+    g) Bland Chromatin:
+        recognizes correctly 444 from 683
+    h) Normal Nucleoli:
+        recognizes correctly 589 from 683
+    i) Mitoses:
+        recognizes correctly 538 from 683
+
+2. Two attributes:
+    - Clump Thickness, Uniformity of Cell Size: 444 from 683
+    - Clump Thickness, Uniformity off Cell Shape: 444 from 683
+    - Clump Thickness, Marginal Adhesion: 239 from 683
+    - Clump Thickness, Single Epithelial Cell Size: 239 from 683
+    - Clump Thickness, Bare Nuclei: 438 from 683
+    - Clump Thickness, Bland Chromatin: 239 from 683
+    - Clump Thickness, Normal Nucleoli: 444 from 683
+    - Clump Thickness, Mitoses: 239 from 683
+    - Bare Nuclei, Bland Chromatin: 239 from 683
+    - Marginal Adhesion, Normal Nucleoli: 444 from 683
+
+3. Three attributes:
+    - Uniformity off Cell Shape, Marginal Adhesion, Normal Nucleoli: 239 from 683,
+    - Single Epithelial Cell Size, Bare Nuclein, Bland Chromatin: 561 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 434 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 576 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: 239 from 683
+
+4. Four attributes:
+    - Clump Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Marginal Adhesion: 463 from 683
+    - Uniformity off Cell Size, Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 259 from 683
+    - Bare Nuclei, Bland Chromatin, : 467 from 683
+    - Marginal Adhesion, Single Epithelial Cell Size, Normal Nucleoli, Mitoses: 549 from 683
+    - Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 541 from 683
+
+5. Five attributes:
+    - Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 569 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 580 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 586 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 541 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 541 from 683
+
+6. Six attributes:
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 592 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 591 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity off Cell Shape,Bland Chromatin, Marginal Adhesion, Normal Nucleoli: 569 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 590 from 683
+
+7. Seven attributes:
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 582 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 591 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 601 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 600 from 683
+
+8. Eight attributes:
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 598 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Normal Nucleoli, Mitoses: 596 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Mitoses: 599 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 605 from 683
+
+9. Nine attributes: 600, 606, 591
