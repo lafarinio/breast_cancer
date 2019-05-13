@@ -24,7 +24,7 @@ class CrossValidation:
 
         temp_X = np.array([x_training[0]])
         temp_y = np.array([y_training[0]])
-        nn = NeuralNetwork(temp_X, temp_y)
+        nn = NeuralNetwork(temp_X, temp_y, add_bias=True)
 
         nn.train_network(x_training, y_training)
 
