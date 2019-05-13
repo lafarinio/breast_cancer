@@ -14,3 +14,9 @@ class MathFunctions:
     @staticmethod
     def transform_into_discrete_values(input: np.ndarray) -> np.ndarray:
         return input / 2 - 1
+
+    @staticmethod
+    def are_values_the_same(predicted_value: float, true_value: float) -> bool:
+        a = round(predicted_value)
+        b = round(true_value)
+        return a == b

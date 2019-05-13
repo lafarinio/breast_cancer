@@ -1,4 +1,5 @@
 from typing import Tuple
+from src.shared.math_functions import MathFunctions as mf
 
 
 class ErrorRatio:
@@ -23,6 +24,4 @@ class ErrorRatio:
 
     @staticmethod
     def __is_predicted_properly(predicted_value: float, true_value: float) -> bool:
-        a = round(predicted_value)
-        b = round(true_value)
-        return a == b
+        return mf.are_values_the_same(predicted_value, true_value)
