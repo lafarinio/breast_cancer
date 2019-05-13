@@ -6,8 +6,8 @@ from random import shuffle
 from src.shared.import_data import ImportData
 from src.shared.math_functions import MathFunctions as mf
 from src.shared.neural_network import NeuralNetwork
-from error_ratio import ErrorRatio
-from model_data import ModelData
+from src.testing.error_ratio import ErrorRatio
+from src.testing.model_data import ModelData
 
 
 class CrossValidation:
