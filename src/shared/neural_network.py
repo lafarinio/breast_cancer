@@ -8,7 +8,7 @@ from src.shared.math_functions import MathFunctions as mf
 
 
 class NeuralNetwork:
-    def __init__(self, x: np.ndarray, y: np.ndarray, hidden_layer_inputs=4, add_bias=False):
+    def __init__(self, x: np.ndarray, y: np.ndarray, hidden_layer_inputs=6, add_bias=False):
         self.add_bias = add_bias
         if self.add_bias:
             add_bias_input = 1
@@ -17,8 +17,18 @@ class NeuralNetwork:
         self.input = x
         self.hidden_layer_inputs = hidden_layer_inputs
         print(self.input.shape)
-        self.weights_input_to_layer = np.random.rand(self.input.shape[1] + add_bias_input, self.hidden_layer_inputs)
-        self.weights_layer_to_output = np.random.rand(self.hidden_layer_inputs + add_bias_input, 1)
+        limit_input_to_layer = 1 / math.sqrt(x.shape[1])
+        limit_layer_to_output = 1 / math.sqrt(hidden_layer_inputs)
+        self.weights_input_to_layer =\
+            np.random.rand(
+                self.input.shape[1] + add_bias_input,
+                self.hidden_layer_inputs) *\
+            limit_input_to_layer * 2 - limit_input_to_layer
+        self.weights_layer_to_output =\
+            np.random.rand(
+                self.hidden_layer_inputs + add_bias_input,
+                1) *\
+            limit_layer_to_output * 2 - limit_layer_to_output
         self.y = y
         self.output = np.zeros(y.shape)
 
@@ -26,7 +36,7 @@ class NeuralNetwork:
         self.input = x
         self.y = y
 
-    def train_network(self, x_data: np.ndarray, y_data: np.ndarray, repeat_time=50):
+    def train_network(self, x_data: np.ndarray, y_data: np.ndarray, repeat_time=200):
         length = x_data.shape[0]
         for j in range(repeat_time):
             for i in range(length):
