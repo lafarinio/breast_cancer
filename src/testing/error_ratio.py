@@ -1,6 +1,6 @@
 from typing import Tuple
 from src.shared.math_functions import MathFunctions as mf
-
+import numpy as np
 
 class ErrorRatio:
     def __init__(self):
@@ -25,3 +25,27 @@ class ErrorRatio:
     @staticmethod
     def __is_predicted_properly(predicted_value: float, true_value: float) -> bool:
         return mf.are_values_the_same(predicted_value, true_value)
+
+    def accuracy_total(self, predicted_values: np.ndarray, true_values: np.ndarray) -> float:
+        accuracy_properly = self.__accuracy_properly_total(predicted_values, true_values)
+        return accuracy_properly
+
+    def accuracy_class1(self, predicted_values: np.ndarray, true_values: np.ndarray) -> float:
+        accuracy_properly = self.__accuracy_properly_class1(predicted_values, true_values)
+        return accuracy_properly
+
+    def accuracy_class2(self, predicted_values: np.ndarray, true_values: np.ndarray) -> float:
+        accuracy_properly = self.__accuracy_properly_class2(predicted_values, true_values)
+        return accuracy_properly
+
+    @staticmethod
+    def __accuracy_properly_total(predicted_values: [], true_values: []) -> float:
+        return mf.accuracy_total(predicted_values, true_values)
+
+    @staticmethod
+    def __accuracy_properly_class1(predicted_values: [], true_values: []) -> float:
+        return mf.accuracy_class1(predicted_values, true_values)
+
+    @staticmethod
+    def __accuracy_properly_class2(predicted_values: [], true_values: []) -> float:
+        return mf.accuracy_class2(predicted_values, true_values)

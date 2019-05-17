@@ -12,7 +12,8 @@ setup(name='breast_cancer',
           'scipy',
           'numpy',
           'pandas',
-          'anaconda'
+          'anaconda',
+          'scikit-learn'
       ],
       zip_safe=False,
       include_package_data=True,

@@ -28,13 +28,26 @@ class CrossValidation:
 
         nn.train_network(x_training, y_training)
 
+        list_true = []
+        list_predicted = []
+
         for i in range(0, x_test.shape[0]):
             temp_X = np.array([x_test[i]])
             temp_y = np.array([y_test[i]])
             predicted_value, true_value = nn.predict_value(temp_X, temp_y)
             error_ratio.update_error_ratio(predicted_value, true_value)
+            print(round(true_value))
+            print(round(predicted_value))
+            list_true.append(round(true_value))
+            list_predicted.append(round(predicted_value))
+
+
             print('Iteracja \t', i, 'Prawdziwa wartosc:\t', true_value, 'Estymowana: \t', predicted_value)
         print('Rozpoznano niepoprawnie ', error_ratio.get_error_ratio(), ' na ', error_ratio.get_all_number())
+        print('Accuracy total %.8f' % error_ratio.accuracy_total(list_predicted, list_true))
+        print('Accuracy class1 %.8f' % error_ratio.accuracy_class1(list_predicted, list_true))
+        print('Accuracy class2 %.8f' % error_ratio.accuracy_class2(list_predicted, list_true))
+
 
 
 if __name__ == "__main__":
