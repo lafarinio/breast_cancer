@@ -19,6 +19,11 @@ class Accuracy:
         accuracy_properly = self.__accuracy_properly_class2()
         return accuracy_properly
 
+    def is_accuracy_better_than(self, range=0.5) -> bool:
+        accuracy_note_1 = self.accuracy_class1() > range
+        accuracy_note_2 = self.accuracy_class2() > range
+        return accuracy_note_1 & accuracy_note_2
+
     def __accuracy_properly_total(self) -> float:
         return mf.accuracy_total(self.predicted_values, self.true_values)
 
