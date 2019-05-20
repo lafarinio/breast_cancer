@@ -2,6 +2,7 @@ from typing import Tuple
 from src.shared.math_functions import MathFunctions as mf
 import numpy as np
 
+
 class ErrorRatio:
     def __init__(self):
         self.__error_number = 0
@@ -13,13 +14,16 @@ class ErrorRatio:
             self.__error_number += 1
         self.__all_number += 1
 
-    def get_ratio(self) -> Tuple[any,any]:
+    def get_ratio(self) -> Tuple[any, any]:
         return self.__error_number, self.__all_number
 
-    def get_error_ratio(self):
+    def get_error_ratio(self) -> float:
+        return self.__error_number / self.__all_number
+
+    def get_error_number(self) -> float:
         return self.__error_number
 
-    def get_all_number(self):
+    def get_all_number(self) -> int:
         return self.__all_number
 
     @staticmethod
