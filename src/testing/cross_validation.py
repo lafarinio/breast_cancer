@@ -20,7 +20,7 @@ class CrossValidation:
     def compute_t_value(self):
         self.__prepare_data()
         p = self.performances[0]
-        self.t_value = p / math.sqrt(self.variances.sum())
+        self.t_value = p / math.sqrt(self.variances.sum() / 5.0)
         print('Performances: ', self.performances)
         print('Variances: ', self.variances)
         print('T Value: ', self.t_value)
