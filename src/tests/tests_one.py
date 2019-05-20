@@ -6,6 +6,7 @@ from random import shuffle
 from src.shared.import_data import ImportData
 from src.shared.math_functions import MathFunctions as mf
 from src.shared.neural_network import NeuralNetwork
+from src.testing.accuracy import Accuracy
 from src.testing.error_ratio import ErrorRatio
 from src.testing.model_data import ModelData
 
@@ -28,8 +29,8 @@ class TestsOne:
 
         nn.train_network(x_training, y_training)
 
-        list_true = []
-        list_predicted = []
+        list_true: np.ndarray = np.empty(x_test.shape[0])
+        list_predicted: np.ndarray = np.empty(x_test.shape[0])
 
         for i in range(0, x_test.shape[0]):
             temp_X = np.array([x_test[i]])
@@ -38,15 +39,16 @@ class TestsOne:
             error_ratio.update_error_ratio(predicted_value, true_value)
             print(round(true_value))
             print(round(predicted_value))
-            list_true.append(round(true_value))
-            list_predicted.append(round(predicted_value))
+            list_true[i] = round(true_value)
+            list_predicted[i] = round(predicted_value)
 
 
             print('Iteracja \t', i, 'Prawdziwa wartosc:\t', true_value, 'Estymowana: \t', predicted_value)
         print('Rozpoznano niepoprawnie ', error_ratio.get_error_number(), ' na ', error_ratio.get_all_number())
-        print('Accuracy total %.8f' % error_ratio.accuracy_total(list_predicted, list_true))
-        print('Accuracy class1 %.8f' % error_ratio.accuracy_class1(list_predicted, list_true))
-        print('Accuracy class2 %.8f' % error_ratio.accuracy_class2(list_predicted, list_true))
+        accuracy = Accuracy(list_predicted, list_true)
+        print('Accuracy total %.8f' % accuracy.accuracy_total())
+        print('Accuracy class1 %.8f' % accuracy.accuracy_class1())
+        print('Accuracy class2 %.8f' % accuracy.accuracy_class2())
 
 
 
