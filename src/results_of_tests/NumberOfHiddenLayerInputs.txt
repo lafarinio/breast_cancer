@@ -1,27 +1,40 @@
-1. 4 hidden layer inputs:
-    - recognizes correctly 444 from 683
-    - recognizes correctly 603 from 683
-    - recognizes correctly 609 from 683
-    - recognizes correctly 590 from 683
+1. 3 hidden layer inputs:
+    - recognizes correctly 611 from 683
+    - recognizes correctly 618 from 683
     - recognizes correctly 612 from 683
+    - recognizes correctly 610 from 683
+	- recognizes correctly 610 from 683
 
-2. 3 hidden layer inputs:
+2. 4 hidden layer inputs:
     - recognizes correctly 605 from 683
-    - recognizes correctly 585 from 683
-    - recognizes correctly 444 from 683
-    - recognizes correctly 602 from 683
-
+    - recognizes correctly 615 from 683
+    - recognizes correctly 614 from 683
+    - recognizes correctly 613 from 683
+    - recognizes correctly 611 from 683
+	
+2. 6 hidden layer inputs:
+    - recognizes correctly 595 from 683
+    - recognizes correctly 690 from 683
+    - recognizes correctly 603 from 683
+    - recognizes correctly 608 from 683
+    - recognizes correctly 626 from 683	
+	
 3. 10 hidden layer inputs:
-    - recognizes correctly 582 from 683
-    - recognizes correctly 239 from 683
-    - recognizes correctly 604 from 683
-    - recognizes correctly 242 from 683
+    - recognizes correctly 611 from 683
+    - recognizes correctly 605 from 683
+    - recognizes correctly 608 from 683
+    - recognizes correctly 607 from 683
+	- recognizes correctly 607 from 683
 
 4. 20 hidden layer inputs:
-    - recognizes correctly 242 from 683
-    - recognizes correctly 241 from 683
-    - recognizes correctly 240 from 683
-    - recognizes correctly 239 from 683
+    - recognizes correctly 604 from 683
+    - recognizes correctly 616 from 683
+    - recognizes correctly 614 from 683
+    - recognizes correctly 608 from 683
 
 5. 40 hidden layer inputs:
-    - recognizes correctly 239 from 683
+    - recognizes correctly 615 from 683
+	- recognizes correctly 612 from 683
+	- recognizes correctly 601 from 683
+	- recognizes correctly 606 from 683
+	- recognizes correctly 596 from 683
