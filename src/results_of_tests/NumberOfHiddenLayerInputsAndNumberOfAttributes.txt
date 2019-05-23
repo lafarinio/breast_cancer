@@ -1,0 +1,202 @@
+1. One attribute and 3 hidden layer inputs:
+    network has not learned for any attribute
+
+2. Three attributes and 3 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 528 from 683,
+    - Single Epithelial Cell Size, Bare Nuclein, Bland Chromatin: 556 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 562 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 516 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: network has not learned
+	
+3. Five attributes and 3 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: network has not learned
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 602 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 582 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 541 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 542 from 683
+	
+4. Seven attributes and 3 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 587 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 596 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 603 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 598 from 683
+
+5. Nine attributes and 3 hidden layer inputs: 608, 588, 587, 606
+
+
+________________
+
+1. One attribute and 4 hidden layer inputs: 
+	- Clump Thickness: network has not learned
+    - Uniformity of Cell Size: network has not learned
+    - Uniformity of Cell Shape: network has not learned
+	- Marginal Adhesion: 588 from 683
+	- Single Epithelial Cell Size: network has not learned
+	- Bare Nuclei: network has not learned
+	- Bland Chromatin: network has not learned
+	- Normal Nucleoli: 589 from 683
+	- Mitoses: network has not learned
+
+2. Three attributes and 4 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 507 from 683,
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 579 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 572 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 551 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: network has not learned
+
+3. Five attributes and 4 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 585 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 599 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 554 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 558 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 519 from 683
+	
+4. Seven attributes and 4 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 597 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 574 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 569 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 605 from 683
+
+5. Nine attributes and 4 hidden layer inputs: 604, 600, 606, 595
+
+_______________
+
+1. One attribute and 6 hidden layer inputs: 
+	- Clump Thickness: network has not learned
+    - Uniformity of Cell Size: network has not learned
+    - Uniformity of Cell Shape: 632 from 683
+	- Marginal Adhesion: 588 from 683
+	- Single Epithelial Cell Size: 600 from 683
+	- Bare Nuclei: 623 from 683
+	- Bland Chromatin: 531 from 683
+	- Normal Nucleoli: 613 from 683
+	- Mitoses: network has not learned
+	
+2. Three attributes and 6 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 527 from 683,
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 556 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 562 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 558 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: network has not learned	
+
+3. Five attributes and 6 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 578 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 580 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 554 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 528 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 527 from 683	
+
+4. Seven attributes and 6 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 587 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 592 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 596 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 599 from 683
+	
+5. Nine attributes and 6 hidden layer inputs: 604, 598, 596, 606
+
+________________
+
+1. One attribute and 10 hidden layer inputs: 
+	- Clump Thickness: network has not learned
+    - Uniformity of Cell Size: network has not learned
+    - Uniformity of Cell Shape: 632 from 683
+	- Marginal Adhesion: 588 from 683
+	- Single Epithelial Cell Size: 615 from 683
+	- Bare Nuclei: 623 from 683
+	- Bland Chromatin: 620 from 683
+	- Normal Nucleoli: 613 from 683
+	- Mitoses: network has not learned
+
+2. Three attributes and 10 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 528 from 683,
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 579 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 565 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 576 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: network has not learned	
+
+3. Five attributes and 10 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 516 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 595 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 588 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 542 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 543 from 683
+
+4. Seven attributes and 10 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 578 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 589 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 576 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 605 from 683
+
+5. Nine attributes and 10 hidden layer inputs: 607, 615, 602, 605
+
+
+_______________
+
+1. One attribute and 20 hidden layer inputs: 
+	- Clump Thickness: 494 from 683
+    - Uniformity of Cell Size: 635 from 683
+    - Uniformity of Cell Shape: 613 from 683
+	- Marginal Adhesion: 588 from 683
+	- Single Epithelial Cell Size: 615 from 683
+	- Bare Nuclei: 623 from 683
+	- Bland Chromatin: 620 from 683
+	- Normal Nucleoli: 613 from 683
+	- Mitoses: network has not learned
+	
+2. Three attributes and 20 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 527 from 683,
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 579 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 575 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 577 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: network has not learned	
+
+3. Five attributes and 20 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 561 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 586 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 594 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 537 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 531 from 683
+	
+4. Seven attributes and 20 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 604 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 588 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 615 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 602 from 683
+
+5. Nine attributes and 20 hidden layer inputs: 599, 603, 601, 603
+
+
+_______________
+
+1. One attribute and 40 hidden layer inputs: 
+	- Clump Thickness: 494 from 683
+    - Uniformity of Cell Size: 635 from 683
+    - Uniformity of Cell Shape: 613 from 683
+	- Marginal Adhesion: 592 from 683
+	- Single Epithelial Cell Size: 615 from 683
+	- Bare Nuclei: 623 from 683
+	- Bland Chromatin: 620 from 683
+	- Normal Nucleoli: 613 from 683
+	- Mitoses: network has not learned
+		
+2. Three attributes and 40 hidden layer inputs: 
+	- Uniformity off Cell Shape, Marginal Adhesion, Single Epithelial Cell Size: 521 from 683,
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 579 from 683,
+    - Bland Chromatin, Normal Nucleoli, Mitoses: 645 from 683,
+    - Uniformity of Cell Size, Marginal Adhesion, Mitoses: 640 from 683
+    - Marginal Adhesion, Bland Chromatin, Normal Nucleoli: 647 from 683
+
+3. Five attributes and 40 hidden layer inputs:
+	- Clumb Thickness, Uniformity of Cell Size, Uniformity off Cell Shape, Normal Nucleoli, Mitoses: 470 from 683
+    - Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 556 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 576 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 564 from 683
+    - Normal Nucleoli, Uniformity of Cell Size, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei: 532 from 683
+
+4. Seven attributes and 40 hidden layer inputs:
+	- Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin: 595 from 683
+    - Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli: 594 from 683
+    - Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Bland Chromatin, Normal Nucleoli, Mitoses: 593 from 683
+    - Clump Thickness, Uniformity of Cell Size, Uniformity of Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Mitoses: 595 from 683
+
+5. Nine attributes and 40 hidden layer inputs: 603, 593, 607, 603
