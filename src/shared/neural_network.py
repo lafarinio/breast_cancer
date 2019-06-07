@@ -57,6 +57,7 @@ class NeuralNetwork:
                 self.__training_process(x_data, y_data, int(repeat_time / 2))
                 return
             else:
+                self.input = np.array([x_data[0]])
                 print('Proba nieudana nr: ', j)
         print('WYLICZONE WAGI NIEZDATNE DO UZYTKU, ZALECANE POWTORZENIE BADAN')
 
@@ -107,7 +108,6 @@ class NeuralNetwork:
 
         temp_input = np.concatenate((self.input, one_array), axis=1)
         self.input = temp_input
-
         temp_layer1 = mf.sigmoid(np.dot(temp_input, self.weights_input_to_layer))
         self.layer1 = np.concatenate((temp_layer1, one_array), axis=1)
 

@@ -19,8 +19,8 @@ class CrossValidation:
 
     def compute_t_value(self):
         self.__prepare_data()
-        p = self.performances[0]
-        self.t_value = p / math.sqrt(self.variances.sum() / 5.0)
+        p = self.performances.max(  )
+        self.t_value = p / math.sqrt(self.variances.sum() * 1.0 / self.repeat_time)
         print('Performances: ', self.performances)
         print('Variances: ', self.variances)
         print('T Value: ', self.t_value)
@@ -38,7 +38,19 @@ class CrossValidation:
 
 if __name__ == "__main__":
     test = ImportData()
-    X1: np.ndarray = test.import_all_data()
+    column_names = np.array([
+        'Clump Thickness',
+        'Uniformity of Cell Size',
+        'Uniformity of Cell Shape',
+        'Marginal Adhesion',
+        'Single Epithelial Cell Size',
+        'Bare Nuclei',
+        'Bland Chromatin',
+        'Normal Nucleoli',
+        'Mitoses'
+    ])
+    X1: np.ndarray = test.import_data(column_names)
+    # X1: np.ndarray = test.import_all_data()
     y1: np.ndarray = test.import_data(np.array(['Class']))
     y1 = mf.transform_into_discrete_values(y1)
     cv = CrossValidation(X1, y1)

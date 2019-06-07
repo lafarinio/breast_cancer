@@ -62,7 +62,7 @@ class NNPerformance:
     def __setup_neural_network(self):
         temp_X = np.array([self.x_training[0]])
         temp_y = np.array([self.y_training[0]])
-        self.nn = NeuralNetwork(temp_X, temp_y)
+        self.nn = NeuralNetwork(temp_X, temp_y, add_bias=True)
 
     def __switch_training_testing(self):
         x_temp: np.ndarray = self.x_test
